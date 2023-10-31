@@ -1,0 +1,228 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.myLogo{
+    /* display: flex;
+    justify-content: flex-start; */
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+}
+/* .navbar-nav{
+    margin-right: 0;
+} */
+.customNav{
+    /* position: fixed; */
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+    /* display: flex;
+    justify-content: space-evenly; */
+    background-color: #64a0c0;
+} 
+/* .navUnderBar{
+    display: block;
+    background-color: #a1d9f7; 
+} */
+a{
+    text-decoration: none;
+}
+.navText{
+    font-family:Arial, Helvetica, sans-serif; 
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+.navText:hover{
+    text-decoration: underline 3px;
+    color: #8F23D1;
+    
+}
+
+
+.intro{
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    background-color: #a1d9f7; 
+}
+.introTxt{
+    font-weight: 600;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin-right: 130px;
+}
+
+.picSize{
+    margin-left: 30px;
+    width: 50px;
+}
+
+.largeCards{
+    display: flex;
+    /* background-color: hotpink; */
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.cardText{
+    cursor: pointer;
+    padding-left: 20%;    
+    font-size: 30px;
+    font-weight: bold;
+    /* font-family: 'IBM Plex Serif', serif; */
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+/* #designProj{
+    background-color: rgb(253, 203, 66);
+    
+} */
+#desProjUnder{
+    background-color: rgb(253, 203, 66);
+    width: 100%;
+    height: 10px;
+}
+
+.allProj{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'projName'
+        'projLogo proDescr'    
+        'CSButton'
+    ; */
+}
+
+
+.projSect{
+    /* background-color: #b15eff; */
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.projLogo{
+    width: 35vh;
+    height: 30vh; 
+    box-shadow: 0px 2px 8px #000000;
+    margin-left: 100px;
+}
+
+.projInfo{
+    /* margin-left: 30px;
+    margin-right: 40px;
+    margin-top: -10px;
+    font-family: 'IBM Plex Serif', serif; */
+    margin: 30px 40px -10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.projName{
+    font-weight: bold;
+    font-size: large;
+}
+
+.projDescr{
+    font-weight: 400;
+
+    /* padding-left: 12px; */
+    /* padding-right: 10px; */
+} 
+@media screen and (max-width: 576px) {
+    .navText{
+        font-size: 20px;
+    }
+    
+    
+    .projSect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+    .projSect img{
+        margin: 0 auto;
+    }
+    .allProj{
+        text-align: center;
+    }
+
+    .projLogo{
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+.CSButton{
+    /* justify-content: center;
+    align-items: center; */
+    /* grid-area: CSButton; */
+    margin-left: 10px;
+    border-radius: 43px;
+    border: none;
+    background-color: rgb(0, 225, 255);
+    width: 160px;
+    height: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.CSButton:hover{
+    box-shadow: 0px 2px 4px #414141 ;
+    background-color: #9625ff;
+    color: white; 
+}
+
+
+#photography{
+    background-color: rgb(255, 116, 116);
+}
+#digitalArt{
+    background-color: #b15eff;
+}
+
+
+
+/* footer section: find way to fix */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: bisque;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.ftLink{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ftLink:hover{
+    text-decoration: underline 3px;
+    color: #8F23D1
+}
+
+/* insert breakpoints for navbar + footer */
+/* see if nav text can become hamburger menu at phone width */
+
